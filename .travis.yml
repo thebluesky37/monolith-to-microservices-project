@@ -9,7 +9,7 @@ script:
 # Tagging 
   - docker tag udagram-api-feed thebluesky37/udagram-api-feed:v1
   - docker tag udagram-api-user thebluesky37/udagram-api-user:v1
-  - docker tag udagram-frontend thebluesky37/udagram-frontend:v1
+  - docker tag udagram-frontend thebluesky37/udagram-frontend:v2
   - docker tag reverseproxy thebluesky37/reverseproxy:v1
 # Do similar for other three images``` 
 # Push 
@@ -17,5 +17,5 @@ script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push thebluesky37/udagram-api-feed:v1
   - docker push thebluesky37/udagram-api-user:v1
-  - docker push thebluesky37/udagram-frontend:v1
+  - docker push thebluesky37/udagram-frontend:v2
   - docker push thebluesky37/reverseproxy:v1
